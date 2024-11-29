@@ -1,7 +1,7 @@
 const cheerio = require("cheerio");
 const fs = require("fs");
 const sendEmail = require("./sendEmail");
-const axios = require("axios")
+// const axios = require("axios")
 
 function readHtml(HTML) {
     const $ = cheerio.load(HTML);
@@ -32,12 +32,12 @@ function readHtml(HTML) {
     } catch (error) {
     }
 }
-function getRequset() {
-    axios.get('')
-        .then((res) => {
-            console.log(res)
-        }).catch((e) => {
-            confirm.log(e)
-        })
-}
+// function getRequset() {
+//     axios.get('')
+//         .then((res) => {
+//             console.log(res)
+//         }).catch((e) => {
+//             confirm.log(e)
+//         })
+// }
 module.exports = readHtml
